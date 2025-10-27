@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog - Niranjana</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* Blog Listing Grid Enhancements */
+
+    #blog {
+      max-width: 1200px;
+      margin: 60px auto;
+      padding: 0 20px;
+      text-align: center;
+    }
+
+    #blog h2 {
+      font-size: 2.5em;
+      margin-bottom: 40px;
+      color: #FFD966;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background-color: #0b1a33;
+      border-radius: 15px;
+      padding: 25px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-align: left;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 18px rgba(255, 255, 255, 0.1);
+    }
+
+    .card h3 {
+      color: #ffcc66;
+      font-size: 1.6em;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: #F0FFF0;
+      font-size: 1em;
+      margin-bottom: 10px;
+    }
+
+    .card a {
+      color: #FFD966;
+      font-weight: bold;
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: color 0.3s ease, border-color 0.3s ease;
+    }
+
+    .card a:hover {
+      color: #ffff4a;
+      border-color: #ffff4a;
+    }
+
+    footer {
+      margin-top: 60px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Blog</h1>
+  </header>
+
+  <nav>
+    <a href="about.html">About</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+
+  <section id="blog">
+    <h2>Recent Posts</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>How Will AI Influence Digital Marketing in 2024?</h3>
+        <p>Published on: April 17, 2024</p>
+        <p><a href="blog-ai-marketing.html">Read More</a></p>
+      </div>
+
+      <div class="card">
+        <h3>Navigating AI Overviews: SEO in 2025</h3>
+        <p>Published on: October 24, 2025</p>
+        <p><a href="blog-aiseo-2025.html">Read More</a></p>
+      </div>
+
+      <!-- Add more blog posts here -->
+      <div class="card">
+        <h3>Future Trends in AI Storytelling</h3>
+        <p>Coming Soon...</p>
+        <p><a href="#">Stay Tuned</a></p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Niranjana | <a href="contact.html" class="footer-link">Contact Me</a>
+</footer>
+
+</body>
+</html>
+

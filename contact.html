@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Niranjana</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        /* Contact Section */
+        section#contact {
+            padding: 50px 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            line-height: 1.8;
+        }
+
+        section#contact h2 {
+            color: #FFD966;
+            font-size: 2.2em;
+            margin-bottom: 20px;
+        }
+
+        section#contact p {
+            font-size: 1.1em;
+            color: #F0FFF0;
+            margin-bottom: 40px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            padding: 12px;
+            border: none;
+            border-radius: 6px;
+            font-size: 1em;
+            background-color: #1A1A1A;
+            color: #FFD966;
+            outline: none;
+        }
+
+        input[type="text"]::placeholder,
+        input[type="email"]::placeholder,
+        textarea::placeholder {
+            color: #ccc;
+        }
+
+        input[type="submit"] {
+            background-color: #840520;
+            color: white;
+            font-size: 1.1em;
+            border: none;
+            border-radius: 6px;
+            padding: 12px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #C51130;
+            transform: scale(1.05);
+        }
+
+        /* Social Links Section */
+        .social-links {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        .icon-circle {
+            background: radial-gradient(circle, #FFD966 20%, #C49B00 90%);
+            border-radius: 50%;
+            padding: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 0 12px rgba(255, 217, 102, 0.5);
+        }
+
+        .icon-circle:hover {
+            transform: scale(1.15);
+            box-shadow: 0 0 25px rgba(255, 217, 102, 0.8);
+        }
+
+        .icon-circle img {
+            width: 40px;
+            height: 40px;
+        }
+
+        footer {
+            background-color: #1A1A1A;
+            color: #FFD966;
+            text-align: center;
+            padding: 20px;
+            font-size: 1em;
+            margin-top: 60px;
+        }
+
+        footer a {
+            color: #FFD966;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            color: #FFEB99;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Contact Me</h1>
+</header>
+
+<nav>
+    <a href="about.html">About</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+
+<section id="contact">
+    <h2>Let's Connect</h2>
+    <p>Have a question, collaboration idea, or just want to say hi? Drop me a message or connect with me below.</p>
+
+    <form action="mailto:ninjumenon2@gmail.com" method="post" enctype="text/plain">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+        <input type="submit" value="Send Message">
+    </form>
+
+    <!-- Social Links -->
+    <div class="social-links">
+        <a href="mailto:ninjumenon2@gmail.com" title="Send me an email">
+            <div class="icon-circle">
+                <img src="https://img.icons8.com/color/96/gmail-new.png" alt="Gmail" />
+            </div>
+        </a>
+        <a href="https://www.linkedin.com/in/niranjana05/" target="_blank" title="Connect on LinkedIn">
+            <div class="icon-circle">
+                <img src="https://img.icons8.com/color/96/linkedin.png" alt="LinkedIn" />
+            </div>
+        </a>
+    </div>
+</section>
+
+<footer>
+    © 2025 Niranjana | <a href="contact.html" class="footer-link">Contact Me</a>
+</footer>
+
+</body>
+</html>
+
